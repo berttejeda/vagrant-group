@@ -79,6 +79,11 @@ Start VMs with forced provisioning:
 $ vagrant group up <group-name> --provision
 ```
 
+Start VMs with provisioning disabled:
+```
+$ vagrant group up <group-name> --no-provision
+```
+
 Shut down VMs:
 ```
 $ vagrant group halt <group-name>

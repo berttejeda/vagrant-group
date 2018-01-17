@@ -48,7 +48,7 @@ module VagrantPlugins
             return nil
           end
         else
-          groups = all_groups.split(",")
+          groups = all_groups.split(",") rescue all_groups
         end
 
         if action == 'list'
