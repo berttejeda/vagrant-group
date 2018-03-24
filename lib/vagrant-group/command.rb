@@ -29,6 +29,11 @@ module VagrantPlugins
           o.on(nil, '--provision', 'Enable provisioning (up, reload).') do
             options[:provision_ignore_sentinel] = true
           end
+
+          o.on(nil, '--no-provision', 'Disable provisioning (up, reload).') do
+            options[:provision_ignore_sentinel] = false
+            options[:provision_enabled] = false
+          end
         end
 
         argv = parse_options(opts)
